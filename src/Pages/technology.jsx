@@ -38,7 +38,7 @@ export default function Technology() {
                   </div>
                 ))}
               </div>
-              <div className='container'>
+              <div className='the-terminology'>
                 <h2>THE TERMINOLOGY…</h2>
                 <h1>{technologyData[technology].name}</h1>
                 <p className='explanation'>

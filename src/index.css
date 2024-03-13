@@ -477,7 +477,7 @@ a {
 
 .technology-left-group {
   display: flex;
-  gap: 80px;
+
   padding-top: 137px;
   & h2 {
     font-size: var(--fs-300);
@@ -499,7 +499,6 @@ a {
 .technology-main {
   display: flex;
   justify-content: space-between;
-  gap: 150px;
   align-items: center;
 
   & img {
@@ -507,9 +506,25 @@ a {
   }
 }
 
+.the-terminology {
+  padding-inline: 15%;
+}
+
 .container-technology,
 .container-technology-title {
   padding-left: 165px;
+}
+
+@media screen and (max-width: 1300px) {
+  .the-terminology {
+    padding-inline: 35px;
+  }
+  .technology-left-group {
+    padding-top: 0;
+    & h1 {
+      white-space: wrap;
+    }
+  }
 }
 
 @media screen and (max-width: 1176px) {
@@ -534,9 +549,23 @@ a {
     width: 242px;
     height: 242px;
   }
+
+  .the-terminology {
+    padding-inline: 35px;
+  }
+  .technology-left-group {
+    padding-top: 0;
+    & h1 {
+      white-space: wrap;
+    }
+  }
 }
 
 @media screen and (max-width: 1050px) {
+  .the-terminology {
+    margin: auto;
+  }
+
   .container {
     padding-inline: 100px;
   }
@@ -551,6 +580,13 @@ a {
 }
 
 @media screen and (max-width: 944px) {
+  /* .technology {
+    & .container {
+      padding-inline: 155px;
+      max-width: 100%;
+    }
+  } */
+
   /* HOME */
   .home {
     background-image: url('../public/tablet-bg.jpg');
@@ -623,6 +659,8 @@ a {
     background-image: url(../public/destination-tablet-bg.png);
     background-position: center;
     background-size: cover;
+    height: auto;
+    padding-bottom: 50px;
   }
   .destination-main {
     display: flex;
@@ -677,6 +715,7 @@ a {
     background-image: url(../public/crew-tablet-bg.png);
     background-size: cover;
     background-position: center;
+    height: auto;
   }
   .crew-main {
     display: flex;
@@ -718,6 +757,8 @@ a {
   .technology {
     background-image: url('../public/technology-tablet-bg.jpg');
     background-size: cover;
+    height: auto;
+    padding-bottom: 50px;
   }
 
   .technology-btns {
@@ -733,6 +774,9 @@ a {
       width: 60px;
       height: 60px;
     }
+  }
+
+  .the-terminology {
   }
 
   .technology-left-group {
@@ -787,7 +831,15 @@ a {
     --letter-spacing-2: 2.362px;
     --letter-spacing-3: 2.362px;
   }
-
+  .container {
+    padding-inline: 24px;
+  }
+  .technology {
+    & .container {
+      padding-inline: 24px;
+    }
+    padding-bottom: 0;
+  }
   /* HOME */
 
   .menu {
@@ -941,7 +993,7 @@ a {
     background-image: url(../public/destination-mobil-bg.png);
     background-position: center;
     background-size: cover;
-    height: auto;
+    height: 100vh;
   }
   .destination-main {
     display: flex;
@@ -1007,6 +1059,7 @@ a {
 
   .crew {
     background-image: url('../public//crew-mobil.png');
+    height: 100vh;
   }
 
   .crew-mobil {
@@ -1041,6 +1094,7 @@ a {
 
   .technology {
     background-image: url('../public/technology-mobil.png');
+    height: 100vh;
   }
   .technology-btns {
     display: flex;
