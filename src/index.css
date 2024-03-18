@@ -251,8 +251,8 @@ a {
   background-image: url('../public/destination.jpg');
   background-position: center;
   background-size: cover;
-  height: max-content;
-  padding-bottom: 80px;
+  height: 100vh;
+  padding-bottom: 100px;
 }
 
 .destination-main {
@@ -528,6 +528,9 @@ a {
       white-space: wrap;
     }
   }
+  .destination {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 1176px) {
@@ -662,7 +665,7 @@ a {
     background-image: url(../public/destination-tablet-bg.png);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: auto;
   }
   .destination-main {
     display: flex;
