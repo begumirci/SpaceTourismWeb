@@ -372,7 +372,6 @@ a {
 
 .crew {
   background-image: url('../public/crew-bg.png');
-  height: auto;
   background-size: cover;
 }
 
@@ -388,6 +387,13 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
+  & img {
+    align-self: flex-end;
+  }
+}
+
+.begum {
+  color: pink;
 }
 
 .crew-mobil {
@@ -720,7 +726,6 @@ a {
     background-image: url(../public/crew-tablet-bg.png);
     background-size: cover;
     background-position: center;
-    height: 100vh;
   }
   .crew-main {
     display: flex;
