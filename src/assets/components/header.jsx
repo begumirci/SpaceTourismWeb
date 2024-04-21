@@ -1,4 +1,4 @@
-import logo from '../../../public/logo.svg';
+import logo from '../../assets/images/logo.svg';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 export default function Header() {
