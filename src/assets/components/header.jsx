@@ -1,4 +1,4 @@
-import logo from '../../assets/images/logo.svg';
+import logo from '../../../public/images/logo.svg';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 export default function Header() {
@@ -13,7 +13,7 @@ export default function Header() {
           <img className='logo' src={logo} alt='logo' />
           <img
             className='menu'
-            src='../../../public/menu.svg'
+            src='/images/menu.svg'
             alt=''
             onClick={handleClick}
           />
@@ -22,7 +22,7 @@ export default function Header() {
         {isOpen ? (
           <div className='menu-drawer'>
             <img
-              src='../../../public/close.svg'
+              src='/images/close.svg'
               alt=''
               onClick={() => setIsOpen(false)}
             />
